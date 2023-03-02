@@ -18,7 +18,7 @@ const Console = () => {
     <div className="relative w-full h-full flex  flex-col items-center justify-center bg-slate-400">
       <img
         src={randomImage}
-        className="w-full h-full flex  flex-col items-center justify-center bg-slate-400"
+        className="w-full h-full flex object-cover  flex-col items-center justify-center bg-slate-400"
       />
       <div className="absolute top-2 right-2  gap-2 flex status-controls">
         <GiBattery100 className="text-2xl text-white" />
@@ -38,11 +38,11 @@ const Console = () => {
         <span>speed</span>
         <span className="text-2xl">60/180</span>
       </div>
-      <div className="absolute bottom-20 left-20 flex gap-5 nav-controls text-white text-6xl">
+      <div className="absolute bottom-20 left-10 flex gap-5 nav-controls text-white text-6xl">
         <BiLeftArrow className="" />
         <BiRightArrow className="" />
       </div>
-      <div className="absolute bottom-20 right-20 flex flex-col speed-controls gap-7 text-white text-6xl">
+      <div className="absolute bottom-20 right-10 flex flex-col speed-controls gap-7 text-white text-6xl">
         <BiUpArrow className="" />
         <BiDownArrow className="" />
       </div>
