@@ -1,3 +1,4 @@
 import Console from "./Console";
+import ButtonWrapper from "./ButtonWrapper";
 
-export { Console };
+export { Console, ButtonWrapper };
