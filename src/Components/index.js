@@ -1,4 +1,4 @@
-import Console from "./Console";
+import Display from "./Display";
 import ButtonWrapper from "./ButtonWrapper";
-
-export { Console, ButtonWrapper };
+import Info from "./Info";
+export { Display, ButtonWrapper, Info };

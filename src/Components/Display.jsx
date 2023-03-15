@@ -6,29 +6,43 @@ import {
   BiDownArrow,
   BiWifi,
 } from "react-icons/bi";
-
+import { Link } from "react-router-dom";
+import { BsInfoCircle } from "react-icons/bs";
 import { GiBattery100 } from "react-icons/gi";
+import { AiFillHome } from "react-icons/ai";
 
 import { MdUploadFile } from "react-icons/md";
 
 import { ButtonWrapper } from "./index";
-import randomImage from "../assets/random_image_2.jpg";
+import randomImage from "../assets/cms_1.jpg";
 
-const Console = () => {
+const Display = () => {
   return (
     <div className="relative w-full h-full flex  flex-col items-center justify-center bg-slate-400">
       <img
         src={randomImage}
         className="w-full h-full flex object-cover  flex-col items-center justify-center bg-slate-400"
       />
-      <div className="absolute top-3 right-3  gap-2 flex status-controls">
+      <div className="absolute top-3 right-5  gap-2 flex status-controls">
         <GiBattery100 className="text-2xl text-white" />
         <BiWifi className="text-2xl text-white" />
       </div>
 
-      <div className="upload">
+      <div className="upload absolute top-3 left-3 flex items-center gap-5">
         {/* Create upload button */}
-        <button className="bg-blue-800 hover:bg-blue-600 text-white px-3 py-1 flex gap-2 items-center justify-center rounded-md absolute top-3 left-3">
+        <Link to="/">
+          <ButtonWrapper>
+            <span
+              // onClick={() => {
+              //   console.log("Hello this is running.");
+              // }}
+              className="text-2xl text-white"
+            >
+              <AiFillHome />
+            </span>
+          </ButtonWrapper>
+        </Link>
+        <button className="bg-secondary hover:bg-secondary text-white px-3 py-1 flex gap-2 items-center justify-center rounded-md ">
           <span>Upload</span>
           <span>
             <MdUploadFile />
@@ -60,4 +74,4 @@ const Console = () => {
   );
 };
 
-export default Console;
+export default Display;

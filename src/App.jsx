@@ -1,11 +1,15 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { Console } from "./Components";
+import { Display, Info } from "./Components";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="App w-full border-none h-screen">
-      <Console />
+      <Routes>
+        <Route exact path="/console" element={<Display />}></Route>
+        <Route exact path="/" element={<Info />}></Route>
+      </Routes>
     </div>
   );
 };

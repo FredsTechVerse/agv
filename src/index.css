@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+ body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    background:#111111 ;
+    color: #FFFFFF;
+ }
+ .debug{
+    @apply border-2 border-red-400
+ }
+}
