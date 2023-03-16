@@ -7,6 +7,7 @@ module.exports = {
         primary: "#FFFFFF",
         background: "#212121",
         secondary: "#FF4545",
+        tertiary: "#ff5757",
         black: "#1E1C1C",
       },
 
@@ -24,7 +25,7 @@ module.exports = {
         "h-2/3": " 66.666667%",
         "h-1/4": " 25%",
         "h-2/4": " 50%",
-        "h-3/4	": " 75%",
+        "h-3/4	": "75%",
         "h-1/5": " 20%",
         "h-2/5": " 40%",
         "h-3/5": " 60%",
@@ -51,6 +52,7 @@ module.exports = {
         "w-3/6": " 50%",
         "w-4/6": " 66.666667%",
         "w-5/6	": " 83.333333%",
+        "w-9/10": "90%",
       },
       // fontFamily: {
       //   sans: ["Inter", "sans-serif"],

@@ -3,13 +3,45 @@
 @tailwind utilities;
 
 @layer components {
+
+   /* Firefox */
+      * {
+         scrollbar-width: thin;
+         scrollbar-color: var(--secondary) var(--primary);
+      }
+   
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+         width: 10px;
+      }
+   
+      *::-webkit-scrollbar-track {
+      @apply bg-slate-800 bg-opacity-30 rounded-lg mt-16 mb-2 ;
+      }
+   
+      *::-webkit-scrollbar-thumb {
+         @apply bg-secondary rounded-lg border-2 border-white;
+      }
+
+      *{
+         @apply font-sans;
+      }
+
  body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    line-height: 1.4;
     background:#111111 ;
     color: #FFFFFF;
+ }
+ .gallery-background{
+   /* background-image: url("./assets/black_pattern_2.jpg"); */
+      background-image: url("./assets/cms_4.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
  }
  .debug{
     @apply border-2 border-red-400
  }
+
+.modal-overlay {
+         @apply fixed inset-0 flex flex-col items-center justify-center z-10
+      }
 }
