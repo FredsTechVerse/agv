@@ -5,15 +5,10 @@ import backgroundImage from "../assets/cms_4.jpeg";
 import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
-    <div className="flex flex-col w-full h-screen overflow-auto ">
-      <div className="flex phone:flex-col tablet:flex relative h-full w-full overflow-auto ">
-        <div className="absolute w-full h-full bg-black bg-opacity-50 backdrop-blur-sm"></div>
-        <img
-          src={backgroundImage}
-          alt=""
-          className="w-full h-full object-cover "
-        />
-        <div className="absolute top-24 w-full flex flex-col gap-5  tablet:items-start phone:items-center tablet:justify-start tablet:top-1/4 tablet:left-5 tablet:w-96 ">
+    // <div className="flex flex-col w-full h-screen ">
+    <div className="gallery-background flex phone:flex-col items-center justify-center relative h-full w-full ">
+      <div className="w-full h-full bg-black bg-opacity-50 backdrop-blur-sm tablet: flex phone:flex-col items-center overflow-auto ">
+        <div className="pl-4 w-full flex flex-col gap-5  tablet:items-start phone:items-center tablet:justify-start tablet:top-1/4 tablet:left-5 tablet:w-96 ">
           <h1 className="text-9xl font-serif">CMS</h1>
           <p className=" text-lg pl-3 w-full  phone:text-center tablet:text-start">
             Control movement of the car using hand signals, voice input, text
@@ -38,6 +33,7 @@ const HomePage = () => {
         <div className="absolute video"></div>
       </div>
     </div>
+    // </div>
   );
 };
 

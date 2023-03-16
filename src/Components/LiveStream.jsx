@@ -36,17 +36,17 @@ const LiveStream = () => {
         src={randomImage}
         className="w-full h-full flex object-cover  flex-col items-center justify-center bg-slate-400"
       />
-      <div className="absolute  top-1  px-4    w-full">
+      <div className="absolute  top-1  px-2 w-full">
         <div className="flex items-center justify-between bg-black bg-opacity-80 rounded-full px-4 w-full">
           <div className="gap-2 flex order-3">
-            <button className="bg-secondary hover:bg-secondary text-white px-3 py-1 flex gap-2 items-center justify-center rounded-md ">
+            <button className="bg-secondary hover:bg-secondary text-white px-2 text-md py-0.5 flex gap-2 items-center justify-center rounded-lg ml-1 ">
               <span>Upload</span>
               <span>
                 <MdUploadFile />
               </span>
             </button>
           </div>
-          <div className="order-2 flex gap-5">
+          <div className="order-2 flex gap-3">
             <GiBattery100 className="text-2xl text-white" />
             <BiWifi className="text-2xl text-white" />
           </div>
